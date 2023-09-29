@@ -6,7 +6,10 @@ module.exports = {
         uniqueName: 'angularapp',
         scriptType: 'text/javascript',
     },
-    devServer: { port: 4200 },
+    devServer: {
+        port: 4200,
+        hot: true,
+    },
     plugins: [
         new container.ModuleFederationPlugin({
             name: 'microfrontends',

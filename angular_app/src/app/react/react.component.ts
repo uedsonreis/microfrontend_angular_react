@@ -14,7 +14,6 @@ export class ReactComponent implements AfterViewInit {
     root!: Root;
 
     ngAfterViewInit() {
-        console.log(this.containerRef)
         this.root = createRoot(this.containerRef.nativeElement);
         this.root.render('Carregando microfrontend...');
 

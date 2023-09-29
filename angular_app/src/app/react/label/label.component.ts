@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, ContentChild, Input } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation, Input } from '@angular/core';
 import * as React from 'react';
 import { Root, createRoot } from 'react-dom/client';
 
