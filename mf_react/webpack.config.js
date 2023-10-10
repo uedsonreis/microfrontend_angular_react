@@ -3,11 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const deps = require("./package.json").dependencies
 const path = require("path")
 
-console.log({
-    react: { singleton: true, requiredVersion: deps.react },
-    'react-dom': { singleton: true, requiredVersion: deps['react-dom'] },
-})
-
 module.exports = {
     mode: "development",
     resolve: {
