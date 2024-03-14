@@ -1,10 +1,10 @@
 # Microfrontend example
 
 ## About
-This is an example that runs a React web app into an Angular web app. It uses **Module Federation** and **Webpack** to integrate the apps.
+This is an example of running a React web app into an Angular web app. It uses **Module Federation** and **Webpack** to integrate the apps.
 
 ## Install Dependencies
-After clone (or download) this project, you should install the npm dependencies inside both web apps (mf_react and angular_app).
+After cloning (or downloading) this project, you should install the npm dependencies inside both web apps (mf_react and angular_app).
 ```bash
 $ cd mf_react
 $ npm install
@@ -28,7 +28,7 @@ $ npm start
 ```
 
 ## Web Apps Running
-To access React app, open http://localhost:3000 in your browser.
-To access Angular app, open http://localhost:4200 in your browser.
+To access the React app, open http://localhost:3000 in your browser.
+To access the Angular app, open http://localhost:4200 in your browser.
 
 To see the React app inside the Angular app, open http://localhost:4200/react in your browser.
