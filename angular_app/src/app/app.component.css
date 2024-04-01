@@ -1,0 +1,7 @@
+.message {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    width: 520px;
+}
