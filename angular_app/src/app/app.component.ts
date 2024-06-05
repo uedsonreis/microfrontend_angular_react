@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'angular_app';
-    label = 'Exemplo de Microfrontend';
+    label = 'React micro-frontend component';
 }

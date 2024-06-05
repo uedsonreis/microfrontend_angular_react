@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, ViewEncapsulation } from '@angular/core';
-import * as React from 'react';
 import { Root, createRoot } from 'react-dom/client';
+import * as React from 'react';
 
 @Component({
     selector: 'app-react',
@@ -15,14 +15,13 @@ export class ReactComponent implements AfterViewInit {
 
     ngAfterViewInit() {
         this.root = createRoot(this.containerRef.nativeElement);
-        this.root.render('Carregando microfrontend...');
-
+        this.root.render('Loading micro-frontend app...');
         try {
             import('reactMf/App').then(ReactApp => {
                 this.root.render(React.createElement(ReactApp.default));
             });
         } catch (error) {
-            console.error('Error on load microfrontend: ', error);
+            console.error('Error on load micro-frontend app: ', error);
         }
     }
 
@@ -30,5 +29,5 @@ export class ReactComponent implements AfterViewInit {
         this.containerRef.nativeElement.unmount();
         this.root.unmount();
     }
-
 }
+
